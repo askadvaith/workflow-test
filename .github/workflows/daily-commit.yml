@@ -11,6 +11,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0 
 
       - name: 23f2004209@ds.study.iitm.ac.in
         run: |
